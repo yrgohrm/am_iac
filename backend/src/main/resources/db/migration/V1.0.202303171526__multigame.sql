@@ -1,0 +1,1 @@
+ALTER TABLE highscore ADD COLUMN game VARCHAR(50);

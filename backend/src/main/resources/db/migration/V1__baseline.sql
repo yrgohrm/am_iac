@@ -1,0 +1,5 @@
+CREATE TABLE highscore (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    score INT NOT NULL,
+    name VARCHAR(100)
+);
