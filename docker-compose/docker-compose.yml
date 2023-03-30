@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  hsfrontend:
+    image: localhost:5000/hsfrontend:latest
+    ports:
+      - "8888:80"
+    depends_on:
+      - hsbackend
+  hsbackend:
+    image: localhost:5000/hsbackend:latest
+    env_file:
+      - backend.env
+    depends_on:
+      - hsmysql
+  hsmysql:
+    image: mysql:8.0
+    env_file:
+      - mysql.env
