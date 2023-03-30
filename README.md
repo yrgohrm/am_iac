@@ -37,6 +37,16 @@ npm install
 npm run dev
 ```
 
+Start the proxy from the `proxy`-directory with:
+
+```
+npm install
+node index.js
+```
+
+The proxy just makes sure to run the backend and frontend from the same origin
+to keep things simple.
+
 ## Build images
 
 Both the frontend and backend needs the following environment variable set:
